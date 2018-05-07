@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">car2018</string>
+    <string name="deviceid">设备ID</string>
+    <string name="loginname">用户名</string>
+
+    <string name="sp_data">80</string>
+    <string name="cd_data">20</string>
+    <string name="angle_data">450</string>
+    <string name="speed">速度:</string>
+    <string name="coded_disc">码盘:</string>
+    <string name="angle_disc">角度:</string>
+    <string name="main_status">主车状态</string>
+    <string name="follow_status">从车状态</string>
+    <string name="main_control">主车控制</string>
+    <string name="follow_control">从车控制</string>
+    <string name="angle_control">角度控制</string>
+    <string name="coded_control">码盘控制</string>
+    <string name="clear_coded_disc">清除码盘</string>
+
+    <string name="position_car">预设位</string>
+    <string name="qrtbtn">二维码</string>
+    <string name="chief">主车状态</string>
+    <string name="digital_title">第几行数据:</string>
+    <string name="voicetext">播报的文本:</string>
+    <string name="voiceText">百科荣创（北京）科技发展有限公司</string>
+
+    <string name="use_uart">使用uart</string>
+    <string name="use_socket">使用socket</string>
+    <string name="full_auto">全自动</string>
+</resources>

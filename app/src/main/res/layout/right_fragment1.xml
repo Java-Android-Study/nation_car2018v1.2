@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green">
+
+    <TextView
+        android:id="@+id/rvdata"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="20sp"
+        android:text="空"
+        android:layout_weight="2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/speed"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/speed_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="@string/sp_data"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/coded_disc"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/coded_disc_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="@string/cd_data"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/angle_disc"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/angle_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="@string/angle_data"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="8"
+        >
+        <ImageButton
+            android:id="@+id/up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/upbutton_img" />
+        <ImageButton
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/up_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35sp"
+            android:background="@drawable/stopbutton_img" />
+
+        <ImageButton
+            android:id="@+id/below_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stop_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35sp"
+            android:background="@drawable/belowbutton_img" />
+
+        <ImageButton
+            android:id="@+id/right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/stop_button"
+            android:layout_marginLeft="35sp"
+            android:layout_toRightOf="@+id/up_button"
+            android:background="@drawable/rightbutton_img" />
+
+        <ImageButton
+            android:id="@+id/left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/below_button"
+            android:layout_marginRight="35sp"
+            android:layout_toLeftOf="@+id/up_button"
+            android:background="@drawable/leftbutton_img" />
+    </RelativeLayout>
+
+</LinearLayout>

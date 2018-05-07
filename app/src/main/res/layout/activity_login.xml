@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/logintext"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/title_icon"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/devicename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/deviceid"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/deviceid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="13sp"
+            android:layout_weight="3"
+            android:background="@drawable/editviewcase"
+            android:cursorVisible="true"
+            android:hint="设备ID不超过16个字符"
+            android:selectAllOnFocus="true"
+            android:textColorHint="#c0c0c0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/loginname"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/loginname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="13sp"
+            android:layout_weight="3"
+            android:background="@drawable/editviewcase"
+            android:cursorVisible="true"
+            android:hint="用户名不超过10个字符"
+            android:maxLength="10"
+            android:selectAllOnFocus="true"
+            android:textColorHint="#c0c0c0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/passwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="密码"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/loginpasswd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15sp"
+            android:layout_weight="3"
+            android:background="@drawable/editviewcase"
+            android:hint="密码不超过16个字符"
+            android:maxLength="16"
+            android:password="true"
+            android:selectAllOnFocus="true"
+            android:textColorHint="#c0c0c0" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="1dp"
+            android:gravity="left"
+            android:layout_weight="1"
+            >
+            <CheckBox
+                android:id="@+id/remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="记住"/>
+            <Switch
+                android:id="@+id/transmit_way"
+                android:layout_marginLeft="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/use_socket"
+                android:textSize="18sp"/>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="27dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="100dp"
+                android:layout_weight="1"
+                android:background="@drawable/loginbutton"
+                android:text="重置"
+                android:textColor="@color/white"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="150dp"
+                android:layout_weight="1"
+                android:background="@drawable/loginbutton"
+                android:text="连接"
+                android:textColor="@color/white"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+    </LinearLayout>

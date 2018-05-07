@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="car.bkrc.com.car2018.FirstActivity">
+
+    <ui.bkrc.car.TitleToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppTheme.AppBar"
+        app:backIcon="@drawable/bg_back"
+        app:backText="返回"
+        app:backTextAppearance="?attr/actionMenuTextAppearance"
+        app:backTextColor="@android:color/white"
+        app:backVisible="false"
+        app:closeText="关闭"
+        app:closeTextAppearance="?attr/actionMenuTextAppearance"
+        app:closeTextColor="@android:color/white"
+        app:closeVisible="false"
+        app:title="智能嵌入式系统应用创新实训平台"
+        app:titleTextAppearance="@style/Title_Appearance"
+        app:titleTextColor="@android:color/white"
+        app:title_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <fragment
+            android:id="@+id/left_fragment"
+            android:name="car.bkrc.right.fragment.LeftFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <com.luseen.luseenbottomnavigation.BottomNavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</LinearLayout>
+
+
+
+
+
